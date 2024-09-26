@@ -1,0 +1,47 @@
+{
+  "name": "@ajaysidhu/react-native-template",
+  "version": "8.2.0",
+  "description": "It is a minimalist React Native template with preconfigured common set of packages to start a new app.",
+  "scripts": {
+    "test": "exit 0",
+    "release:major": "npx release-it -- major",
+    "release:minor": "npx release-it -- minor",
+    "release:patch": "npx release-it -- patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaykumar97/react-native-template.git"
+  },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "starter",
+    "react-native",
+    "react",
+    "native"
+  ],
+  "author": "Ajay Kumar (https://ajay-kumar.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaykumar97/react-native-template/issues"
+  },
+  "homepage": "https://ajaykumar97.github.io/react-native-template/",
+  "dependencies": {
+    "cli-spinners": "^3.0.0"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
+    "release-it": "^14.11.5"
+  }
+}
